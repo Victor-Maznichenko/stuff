@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    margin-top: 20px;
+}
+.descr{
+    color: #576067;
+    span {
+        color: #6C3EB8;
+    }
+}
+.social{
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+    li+li{
+        margin-left: 15px;
+    }
+}

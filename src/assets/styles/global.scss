@@ -1,6 +1,6 @@
 *,
 *::after,
-&::before {
+*::before {
   box-sizing: border-box;
 }
 
@@ -21,7 +21,24 @@ h6 {
 }
 
 .container {
-  max-width: $container_width;
+  max-width: 1305px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+body {
+  background-color: #212123;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section, aside, footer {
+  border-radius: 6px;
+  background-color: #191919;
 }

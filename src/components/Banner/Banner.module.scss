@@ -1,0 +1,44 @@
+.banner {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    padding: 0 30px;
+}
+
+.info{
+    padding-left: 20px;
+}
+
+.title {
+    color: #212123;
+    font-size: 119px;
+    font-weight: 900;
+    line-height: 140%;
+}
+
+.subtitle,
+.descr,
+.title {
+    text-transform: uppercase;
+}
+
+.descr {
+    color: #616E74;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #F6F6F7;
+    font-size: 42px;
+    font-weight: 700;
+    max-width: 480px;
+    margin-bottom: 24px;
+}
+
+.img{
+    position: absolute;
+    right: 40px;
+    bottom: -30px;
+}
