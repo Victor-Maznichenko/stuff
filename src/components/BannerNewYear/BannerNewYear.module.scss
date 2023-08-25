@@ -1,0 +1,51 @@
+.banner {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.info {
+  padding: 75px 20px 20px;
+  position: relative;
+}
+.info,
+.img {
+  width: 50%;
+}
+.img {
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.subtitle {
+  color: #6c3eb8;
+  font-size: 70px;
+  font-weight: 300;
+}
+.title {
+  color: #6c3eb8;
+  font-size: 150px;
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+.decr{
+    color: #212123;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    b{
+        color: #6C3EB8;
+    }
+}
+.subImage1, .subImage2{
+    position: absolute;
+    display: block;
+}
+.subImage1{
+    left: -25px;
+    bottom: 74px;
+}
+.subImage2{
+    right: -20px;
+    bottom: -24px;
+}

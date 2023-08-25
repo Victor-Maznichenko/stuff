@@ -1,0 +1,25 @@
+.cart{
+  padding: 25px 32px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.footer{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  color: #B8B8B8;
+  font-size: 20px;
+  font-weight: 600;
+  span{
+    color: #FFF;
+  }
+}

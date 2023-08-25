@@ -1,0 +1,47 @@
+.catalog{
+  width: 100%;
+  padding: 25px 22px;
+}
+.title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.input{
+  width: 230px;
+  display: block;
+}
+.top{
+  margin-bottom: 20px;
+}
+.items, .top{
+  display: flex;
+  align-items: center;
+}
+.items{
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.input-price{
+  position: relative;
+  margin-left: 20px;
+  input{
+    padding-right: 100px;
+    font-weight: 600;
+  }
+  span{
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-weight: 400;
+    color: #616E74;
+  }
+}
+.more{
+  margin: 0 auto;
+  display: block;
+  margin-top: 32px;
+}

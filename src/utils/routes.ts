@@ -4,5 +4,6 @@ export const ROUTES = {
     USER: '/user',
     FAVORITE: '/favorite',
     // Route с динамическим путем
-    CATEGORIES: '/categories/:id'
+    PRODUCTS: '/products/:id',
+    CATEGORIES: '/category/:id'
 }

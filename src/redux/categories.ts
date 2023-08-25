@@ -1,44 +1,39 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios'
-
-interface ICategory {
-    id: number,
-    name: string
-}
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {ICategory} from "../components/Categories/Category/ICategory";
+import axios from "axios";
+import {BASE_URL} from "../utils/constants";
 
 interface ICategoriesState {
-    list: Array<ICategory>
+    list: Array<ICategory>;
 }
 
 const initialState: ICategoriesState = {
-    list: []
+    list: [],
 };
 
 // Создаю action getUsers
 export const getCategories = createAsyncThunk(
-    'getCategories',
-    async () => {
+    "getCategories",
+    async (_, thunkAPI) => {
         try {
-            const response = await axios('https://api.escuelajs.co/api/v1/categories');
-            return response.data;
-        } catch (error) {
-            console.log(error);
+            const res = await axios.get(`${BASE_URL}/categories`);
+            return res.data;
+        } catch (err) {
+            console.log(err);
+            return thunkAPI.rejectWithValue(err);
         }
     }
 );
 
 const categoriesSlice = createSlice({
-    name: 'categories',
+    name: "categories",
     initialState,
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: (builder) => {
         builder.addCase(getCategories.fulfilled, (state, action) => {
             state.list = action.payload;
         });
-    }
+    },
 });
-
 
 export default categoriesSlice.reducer;
